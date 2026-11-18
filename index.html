@@ -2,199 +2,123 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TAWAKUL PARFUMS | Boutique</title>
-    <meta name="description" content="Découvrez l'univers olfactif de TAWAKUL PARFUMS.">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAWAKUL PARFUMS | Boutique de parfums</title>
+  <meta name="description" content="Découvrez l'univers olfactif de TAWAKUL PARFUMS à Parcelles Assainies, Dakar.">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="header">
-    <a href="#accueil" class="logo">TAWAKUL <span>PARFUMS</span></a>
-    <p>Une marque de parfum unique</p>
-</header>
-
-<nav class="navbar">
+<header>
+  <div class="logo">TAWAKUL <span>PARFUMS</span></div>
+  <nav>
     <a href="#accueil">Accueil</a>
     <a href="#collection">Collection</a>
-    <a href="#marque">Notre histoire</a>
+    <a href="#apropos">Notre univers</a>
     <a href="#contact">Contact</a>
-    <a href="#panier">Panier (<span id="cart-count">0</span>)</a>
-</nav>
+  </nav>
+</header>
 
-<main>
 <section class="hero" id="accueil">
-    <div class="hero-content">
-        <span class="eyebrow">L'ART DU PARFUM</span>
-        <h1>Sentir bon,<br>c'est respecter les autres.</h1>
-        <p>Découvrez un univers de fragrances élégantes et de caractère.</p>
-        <a href="#collection" class="btn">Découvrir nos parfums</a>
-    </div>
+  <div class="hero-content">
+    <p class="surtitle">L'ÉLÉGANCE À CHAQUE INSTANT</p>
+    <h1>Une marque de parfum unique</h1>
+    <p>Sentir bon, c'est respecter les autres.</p>
+    <a href="#collection" class="btn">Découvrir notre univers</a>
+  </div>
 </section>
 
-<section class="intro" id="marque">
-    <span class="eyebrow">BIENVENUE CHEZ NOUS</span>
-    <h2>Une signature. Une identité. Un parfum.</h2>
-    <p>TAWAKUL PARFUMS célèbre l'art de sentir bon à travers un univers inspiré de l'élégance orientale.</p>
-    <p>Ton choix, ta dose, ton prix.</p>
+<section class="intro" id="apropos">
+  <p class="surtitle">BIENVENUE CHEZ TAWAKUL</p>
+  <h2>Ton choix, ta dose, ton prix.</h2>
+  <p>Découvrez un univers de fragrances inspiré par l'élégance,
+  le raffinement et la personnalité de chacun.</p>
 </section>
 
 <section class="collection" id="collection">
-    <span class="eyebrow">NOTRE SÉLECTION</span>
-    <h2>La collection Oud</h2>
-    <p class="section-description">Découvrez notre sélection de fragrances de démonstration.</p>
+  <p class="surtitle">NOTRE SÉLECTION</p>
+  <h2>Collection Oud</h2>
+  <p class="demo">Produits et prix illustratifs pour la présentation du site.</p>
 
-    <div class="products">
+  <div class="products">
 
-        <article class="product">
-            <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=700" alt="Flacon de parfum Oud Royal">
-            <div class="product-info">
-                <span class="product-type">EAU DE PARFUM</span>
-                <h3>Oud Royal</h3>
-                <p>Une inspiration orientale et raffinée.</p>
-                <strong>5 000 FCFA</strong>
-                <button onclick="addToCart('Oud Royal', 5000)">Ajouter au panier</button>
-            </div>
-        </article>
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=700" alt="Flacon de parfum">
+      <h3>Oud Royal</h3>
+      <p>Une fragrance élégante et raffinée.</p>
+      <strong>5 000 FCFA</strong>
+      <button onclick="commander('Oud Royal',5000)">Commander</button>
+    </article>
 
-        <article class="product">
-            <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=700" alt="Flacon de parfum Oud Intense">
-            <div class="product-info">
-                <span class="product-type">EAU DE PARFUM</span>
-                <h3>Oud Intense</h3>
-                <p>Une inspiration boisée et profonde.</p>
-                <strong>7 500 FCFA</strong>
-                <button onclick="addToCart('Oud Intense', 7500)">Ajouter au panier</button>
-            </div>
-        </article>
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=700" alt="Parfum élégant">
+      <h3>Oud Intense</h3>
+      <p>Une identité olfactive profonde.</p>
+      <strong>7 500 FCFA</strong>
+      <button onclick="commander('Oud Intense',7500)">Commander</button>
+    </article>
 
-        <article class="product">
-            <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=700" alt="Flacon de parfum Oud Prestige">
-            <div class="product-info">
-                <span class="product-type">EAU DE PARFUM</span>
-                <h3>Oud Prestige</h3>
-                <p>Une inspiration élégante et distinguée.</p>
-                <strong>10 000 FCFA</strong>
-                <button onclick="addToCart('Oud Prestige', 10000)">Ajouter au panier</button>
-            </div>
-        </article>
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=700" alt="Flacon de parfum de luxe">
+      <h3>Oud Prestige</h3>
+      <p>Le caractère d'une fragrance distinctive.</p>
+      <strong>10 000 FCFA</strong>
+      <button onclick="commander('Oud Prestige',10000)">Commander</button>
+    </article>
 
-        <article class="product">
-            <img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=700" alt="Flacon d'huile Oud Signature">
-            <div class="product-info">
-                <span class="product-type">HUILE PARFUMÉE</span>
-                <h3>Oud Signature</h3>
-                <p>Une inspiration douce et précieuse.</p>
-                <strong>3 500 FCFA</strong>
-                <button onclick="addToCart('Oud Signature', 3500)">Ajouter au panier</button>
-            </div>
-        </article>
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=700" alt="Flacon parfum">
+      <h3>Oud Signature</h3>
+      <p>Une touche personnelle et délicate.</p>
+      <strong>3 500 FCFA</strong>
+      <button onclick="commander('Oud Signature',3500)">Commander</button>
+    </article>
 
-    </div>
-    <p class="demo-note">Catalogue et tarifs fictifs : produits présentés à titre illustratif.</p>
-</section>
-
-<section class="cart-section" id="panier">
-    <span class="eyebrow">VOTRE SÉLECTION</span>
-    <h2>Mon panier</h2>
-    <div id="cart-items">Votre panier est vide.</div>
-    <h3>Total : <span id="cart-total">0</span> FCFA</h3>
-    <button class="btn" onclick="checkout()">Commander sur WhatsApp</button>
+  </div>
 </section>
 
 <section class="contact" id="contact">
-    <span class="eyebrow">RESTONS EN CONTACT</span>
-    <h2>Une question ?</h2>
-   <a class="btn" href="https://wa.me/221778641320" target="_blank"> 
-    <p>Notre équipe sera ravie de vous accompagner.</p>
-    
-    <p class="demo-note">Numéro provisoire à remplacer par le numéro officiel.</p>
+  <p class="surtitle">RESTONS EN CONTACT</p>
+  <h2>Nous trouver</h2>
+
+  <div class="contact-info">
+    <p><strong>TAWAKUL PARFUMS</strong></p>
+    <p>📍 Parcelles Assainies, Unité 7, Dakar, Sénégal</p>
+    <p>📞 +221 77 864 13 20</p>
+    <a class="btn" href="https://wa.me/221778641320" target="_blank">
+      Nous contacter sur WhatsApp
+    </a>
+  </div>
+
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps?q=Parcelles+Assainies+Unite+7+Dakar+Senegal&output=embed"
+      width="100%"
+      height="300"
+      style="border:0;"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+  </div>
 </section>
-</main>
 
 <footer>
-    <h2>TAWAKUL PARFUMS</h2>
-    <p>Sentir bon, c'est respecter les autres.</p>
-    <p>© 2026 TAWAKUL PARFUMS - Tous droits réservés.</p>
+  <h3>TAWAKUL PARFUMS</h3>
+  <p>Une marque de parfum unique.</p>
+  <p>© 2026 TAWAKUL PARFUMS - Tous droits réservés.</p>
 </footer>
 
 <script>
-let cart = [];
-
-function addToCart(name, price) {
-    const item = cart.find(product => product.name === name);
-
-    if (item) {
-        item.quantity++;
-    } else {
-        cart.push({name, price, quantity: 1});
-    }
-
-    updateCart();
-}
-
-function updateCart() {
-    const container = document.getElementById("cart-items");
-    const totalElement = document.getElementById("cart-total");
-    const countElement = document.getElementById("cart-count");
-
-    container.innerHTML = "";
-    let total = 0;
-    let count = 0;
-
-    if (cart.length === 0) {
-        container.textContent = "Votre panier est vide.";
-    }
-
-    cart.forEach((item, index) => {
-        total += item.price * item.quantity;
-        count += item.quantity;
-
-        const line = document.createElement("p");
-        line.textContent = item.name + " x " + item.quantity +
-            " - " + (item.price * item.quantity).toLocaleString("fr-FR") +
-            " FCFA ";
-
-        const remove = document.createElement("button");
-        remove.textContent = "Retirer";
-        remove.onclick = () => {
-            cart.splice(index, 1);
-            updateCart();
-        };
-
-        line.appendChild(remove);
-        container.appendChild(line);
-    });
-
-    totalElement.textContent = total.toLocaleString("fr-FR");
-    countElement.textContent = count;
-}
-
-function checkout() {
-    if (cart.length === 0) {
-        alert("Votre panier est vide.");
-        return;
-    }
-
-    let message = "Bonjour TAWAKUL PARFUMS, voici ma commande :\n";
-
-    cart.forEach(item => {
-        message += "\n" + item.name + " x " + item.quantity;
-    });
-
-    const total = cart.reduce((sum, item) =>
-        sum + item.price * item.quantity, 0);
-
-    message += "\n\nTotal : " + total + " FCFA";
-    message += "\nCommande de démonstration.";
-
-    const phone = "221778641320";
-    window.open(
-        "https://wa.me/" + phone + "?text=" +
-        encodeURIComponent(message),
-        "_blank"
-    );
+function commander(produit, prix) {
+  const phone = "221778641320";
+  const message = "Bonjour TAWAKUL PARFUMS, je souhaite commander : "
+    + produit + " au prix de " + prix + " FCFA.";
+  window.open(
+    "https://wa.me/" + phone + "?text=" + encodeURIComponent(message),
+    "_blank"
+  );
 }
 </script>
 
