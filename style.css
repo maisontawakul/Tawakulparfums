@@ -1,11 +1,45 @@
+
+/* BASE DU SITE */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --creme: #f8f5f0;
+    --dore: #b89555;
+    --marron: #35251d;
+    --blanc: #ffffff;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f5f0;
-    color: #222;
+    font-family: 'Georgia', serif;
+    background-color: var(--creme);
+    color: var(--marron);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--dore);
+    text-decoration: none;
+}
+
+button {
+    background-color: var(--dore);
+    color: var(--blanc);
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+button:hover {
+    background-color: var(--marron);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
