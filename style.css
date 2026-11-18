@@ -1,255 +1,328 @@
 
+/* ==============================
+   TAWAKUL PARFUMS
+   Thème : Crème, Marron et Doré
+================================ */
+
+/* RESET */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: Georgia, serif;
-  background: #f8f4ec;
-  color: #35251c;
-  line-height: 1.6;
+    font-family: Georgia, serif;
+    background: #f8f4ec;
+    color: #35251c;
+    line-height: 1.7;
 }
 
+/* ==============================
+   EN-TÊTE ET NAVIGATION
+================================ */
+
 header {
-  background: #2b1c16;
-  color: #fff;
-  padding: 22px 7%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 18px;
+    background: #f1e8d9;
+    color: #4b2e24;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    border-bottom: 1px solid #dfcba9;
 }
 
 .logo {
-  font-size: 25px;
-  letter-spacing: 3px;
-  font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #4b2e24;
 }
 
 .logo span {
-  color: #d7b46a;
+    color: #b89555;
 }
 
 nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
+nav a,
+nav a:link,
+nav a:visited {
+    color: #4b2e24;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-nav a:hover {
-  color: #d7b46a;
+nav a:hover,
+nav a:focus {
+    color: #b89555;
 }
+
+nav a:active {
+    color: #80602c;
+}
+
+/* ==============================
+   SECTION ACCUEIL
+================================ */
 
 .hero {
-  min-height: 530px;
-  background:
-    linear-gradient(rgba(25,15,10,.55), rgba(25,15,10,.65)),
-    url("https://images.unsplash.com/photo-1594035910387-fea47794261f?w=1600")
-    center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 50px 20px;
+    min-height: 530px;
+    background:
+        linear-gradient(
+            rgba(25, 15, 10, 0.55),
+            rgba(25, 15, 10, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1594035910387-fea47794261f?w=1600")
+        center/cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
 }
 
 .hero-content {
-  max-width: 750px;
+    max-width: 750px;
 }
 
 .surtitle {
-  color: #b18b45;
-  letter-spacing: 4px;
-  font-size: 12px;
-  font-weight: bold;
-  margin-bottom: 15px;
+    color: #b89555;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
 .hero h1 {
-  font-size: clamp(36px, 6vw, 65px);
-  line-height: 1.15;
-  margin-bottom: 20px;
+    font-size: clamp(36px, 6vw, 65px);
+    line-height: 1.15;
+    margin-bottom: 20px;
 }
 
 .hero-content > p:not(.surtitle) {
-  font-size: 19px;
-  margin-bottom: 30px;
+    font-size: 19px;
+    margin-bottom: 30px;
 }
+
+/* BOUTONS */
 
 .btn {
-  display: inline-block;
-  background: #b18b45;
-  color: white;
-  padding: 13px 25px;
-  text-decoration: none;
-  border-radius: 3px;
-  border: none;
-  cursor: pointer;
-  font-size: 14px;
+    display: inline-block;
+    background: #8b6338;
+    color: white;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 1px solid #b89555;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s ease;
 }
 
-.btn:hover,
-.product button:hover {
-  background: #80602c;
+.btn:hover {
+    background: #4b2e24;
+    color: #f1d9a7;
 }
+
+/* ==============================
+   NOTRE UNIVERS
+================================ */
 
 .intro,
 .collection,
 .contact {
-  text-align: center;
-  padding: 75px 7%;
+    text-align: center;
+    padding: 75px 7%;
 }
 
 .intro h2,
 .collection h2,
 .contact h2 {
-  font-size: 34px;
-  margin-bottom: 18px;
+    font-size: 34px;
+    color: #4b2e24;
+    margin-bottom: 18px;
 }
 
 .intro > p:last-child {
-  max-width: 650px;
-  margin: auto;
+    max-width: 650px;
+    margin: auto;
 }
 
+/* ==============================
+   COLLECTION
+================================ */
+
 .demo {
-  color: #80602c;
-  font-size: 13px;
-  margin-bottom: 30px;
+    color: #80602c;
+    font-size: 13px;
+    margin-bottom: 30px;
 }
 
 .products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+    gap: 25px;
+    margin-top: 35px;
 }
 
 .product {
-  background: white;
-  padding: 15px 15px 25px;
-  border: 1px solid #e8ddca;
-  box-shadow: 0 5px 18px rgba(0,0,0,.06);
+    background: #fffdf9;
+    padding: 15px 15px 25px;
+    border: 1px solid #e2d2b9;
+    box-shadow: 0 5px 18px rgba(75, 46, 36, 0.09);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(75, 46, 36, 0.15);
 }
 
 .product img {
-  width: 100%;
-  height: 240px;
-  object-fit: cover;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
 }
 
 .product h3 {
-  font-size: 21px;
-  margin: 15px 0 8px;
+    font-size: 21px;
+    color: #4b2e24;
+    margin: 15px 0 8px;
 }
 
 .product p {
-  font-size: 14px;
-  margin-bottom: 12px;
+    font-size: 14px;
+    margin-bottom: 12px;
 }
 
 .product strong {
-  display: block;
-  color: #98712f;
-  margin-bottom: 15px;
+    display: block;
+    color: #98712f;
+    margin-bottom: 15px;
 }
 
 .product button {
-  background: #35251c;
-  color: white;
-  border: none;
-  padding: 12px 22px;
-  cursor: pointer;
-  width: 100%;
+    background: #4b2e24;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    transition: background 0.3s ease;
 }
 
+.product button:hover {
+    background: #98712f;
+}
+
+/* ==============================
+   CONTACT
+================================ */
+
 .contact {
-  background: #eee5d5;
+    background: #eee5d5;
 }
 
 .contact-info {
-  margin: 25px auto 35px;
-  line-height: 2.2;
+    margin: 25px auto 35px;
+    line-height: 2.2;
 }
 
 .contact-info .btn {
-  margin-top: 15px;
+    margin-top: 15px;
 }
 
 .map {
-  max-width: 850px;
-  margin: 35px auto 0;
-  overflow: hidden;
-  border: 5px solid white;
+    max-width: 850px;
+    margin: 35px auto 0;
+    overflow: hidden;
+    border: 5px solid #fffdf9;
+    box-shadow: 0 5px 18px rgba(75, 46, 36, 0.12);
 }
 
 .map iframe {
-  display: block;
+    display: block;
 }
 
+/* ==============================
+   PIED DE PAGE
+================================ */
+
 footer {
-  background: #2b1c16;
-  color: white;
-  text-align: center;
-  padding: 35px 15px;
+    background: #3b261d;
+    color: #f8f4ec;
+    text-align: center;
+    padding: 35px 15px;
 }
 
 footer h3 {
-  color: #d7b46a;
-  letter-spacing: 3px;
-  margin-bottom: 10px;
+    color: #d7b46a;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
 }
 
 footer p {
-  font-size: 13px;
-  margin: 5px;
+    font-size: 13px;
+    margin: 5px;
 }
+
+/* ==============================
+   VERSION MOBILE
+================================ */
 
 @media (max-width: 600px) {
-  header {
-    justify-content: center;
-    text-align: center;
-  }
 
-  nav {
-    justify-content: center;
-    gap: 13px;
-  }
-
-  .hero {
-    min-height: 430px;
-  }
-
-  .intro,
-  .collection,
-  .contact {
-    padding: 55px 5%;
-  }
+    header {
+        justify-content: center;
+        text-align: center;
+        padding: 20px 5%;
     }
-nav a {
-    color: #4b2e24;
-    text-decoration: none;
-    font-weight: 500;
-}
 
-nav a:visited {
-    color: #4b2e24;
-}
+    nav {
+        justify-content: center;
+        gap: 16px;
+    }
 
-nav a:hover {
-    color: #b89555;
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 430px;
+    }
+
+    .intro,
+    .collection,
+    .contact {
+        padding: 55px 5%;
+    }
+
+    .intro h2,
+    .collection h2,
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
 }
