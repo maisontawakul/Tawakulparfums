@@ -1,5 +1,4 @@
 
-/* BASE DU SITE */
 * {
     margin: 0;
     padding: 0;
@@ -14,32 +13,94 @@
 }
 
 body {
-    font-family: 'Georgia', serif;
-    background-color: var(--creme);
+    font-family: Georgia, serif;
+    background: var(--creme);
     color: var(--marron);
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
-a {
+header {
+    text-align: center;
+    padding: 35px 15px;
+    background: var(--marron);
+    color: var(--creme);
+}
+
+header h1 {
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+header p {
     color: var(--dore);
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 18px;
+    background: var(--blanc);
+}
+
+nav a {
+    color: var(--marron);
     text-decoration: none;
 }
 
-button {
-    background-color: var(--dore);
-    color: var(--blanc);
-    border: none;
-    padding: 12px 25px;
-    cursor: pointer;
-    font-family: inherit;
+nav a:hover {
+    color: var(--dore);
 }
 
-button:hover {
-    background-color: var(--marron);
+.hero {
+    text-align: center;
+    padding: 110px 20px;
+    min-height: 450px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+.signature {
+    color: var(--dore);
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.bouton {
+    display: inline-block;
+    background: var(--dore);
+    color: white;
+    padding: 13px 30px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.bouton:hover {
+    background: var(--marron);
+}
+
+#univers {
+    text-align: center;
+    padding: 70px 20px;
+    background: white;
+}
+
+#univers h2 {
+    margin-bottom: 20px;
+    color: var(--dore);
+}
+
+footer {
+    text-align: center;
+    padding: 35px;
+    background: var(--marron);
+    color: white;
 }
