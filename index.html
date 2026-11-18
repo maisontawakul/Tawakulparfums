@@ -1,11 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>TAWAKUL PARFUMS | Boutique de parfums</title>
-  <meta name="description" content="Découvrez l'univers olfactif de TAWAKUL PARFUMS à Parcelles Assainies, Dakar.">
+
+  <meta name="description" content="Découvrez TAWAKUL PARFUMS.">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,6 +15,7 @@
 
 <header>
   <div class="logo">TAWAKUL <span>PARFUMS</span></div>
+
   <nav>
     <a href="#accueil">Accueil</a>
     <a href="#collection">Collection</a>
@@ -23,76 +26,186 @@
 
 <section class="hero" id="accueil">
   <div class="hero-content">
+
     <p class="surtitle">L'ÉLÉGANCE À CHAQUE INSTANT</p>
+
     <h1>Une marque de parfum unique</h1>
+
     <p>Sentir bon, c'est respecter les autres.</p>
-    <a href="#collection" class="btn">Découvrir notre univers</a>
+
+    <a href="#collection" class="btn">
+      Découvrir notre univers
+    </a>
+
   </div>
 </section>
 
 <section class="intro" id="apropos">
+
   <p class="surtitle">BIENVENUE CHEZ TAWAKUL</p>
+
   <h2>Ton choix, ta dose, ton prix.</h2>
-  <p>Découvrez un univers de fragrances inspiré par l'élégance,
-  le raffinement et la personnalité de chacun.</p>
+
+  <p>
+    Découvrez un univers de fragrances inspiré par
+    l'élégance, le raffinement et la personnalité de chacun.
+  </p>
+
 </section>
 
 <section class="collection" id="collection">
+
   <p class="surtitle">NOTRE SÉLECTION</p>
+
   <h2>Collection Oud</h2>
-  <p class="demo">Produits et prix illustratifs pour la présentation du site.</p>
+
+  <p class="demo">Découvrez nos différentes fragrances.</p>
 
   <div class="products">
 
     <article class="product">
-      <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=700" alt="Flacon de parfum">
+
+      <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=700"
+      alt="Flacon de parfum">
+
       <h3>Oud Royal</h3>
+
       <p>Une fragrance élégante et raffinée.</p>
+
       <strong>5 000 FCFA</strong>
-      <button onclick="commander('Oud Royal',5000)">Commander</button>
+
+      <button class="add-cart"
+      data-name="Oud Royal"
+      data-price="5000">
+        Ajouter au panier
+      </button>
+
     </article>
 
     <article class="product">
-      <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=700" alt="Parfum élégant">
+
+      <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=700"
+      alt="Parfum élégant">
+
       <h3>Oud Intense</h3>
+
       <p>Une identité olfactive profonde.</p>
+
       <strong>7 500 FCFA</strong>
-      <button onclick="commander('Oud Intense',7500)">Commander</button>
+
+      <button class="add-cart"
+      data-name="Oud Intense"
+      data-price="7500">
+        Ajouter au panier
+      </button>
+
     </article>
 
     <article class="product">
-      <img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=700" alt="Flacon de parfum de luxe">
+
+      <img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=700"
+      alt="Flacon de parfum de luxe">
+
       <h3>Oud Prestige</h3>
+
       <p>Le caractère d'une fragrance distinctive.</p>
+
       <strong>10 000 FCFA</strong>
-      <button onclick="commander('Oud Prestige',10000)">Commander</button>
+
+      <button class="add-cart"
+      data-name="Oud Prestige"
+      data-price="10000">
+        Ajouter au panier
+      </button>
+
     </article>
 
     <article class="product">
-      <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=700" alt="Flacon parfum">
+
+      <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=700"
+      alt="Flacon parfum">
+
       <h3>Oud Signature</h3>
+
       <p>Une touche personnelle et délicate.</p>
+
       <strong>3 500 FCFA</strong>
-      <button onclick="commander('Oud Signature',3500)">Commander</button>
+
+      <button class="add-cart"
+      data-name="Oud Signature"
+      data-price="3500">
+        Ajouter au panier
+      </button>
+
     </article>
 
   </div>
+
+</section>
+
+<!-- PANIER -->
+
+<section class="cart-section" id="panier">
+
+  <p class="surtitle">VOTRE SÉLECTION</p>
+
+  <h2>Mon panier 🛍️</h2>
+
+  <p id="cart-count">0 article</p>
+
+  <div id="cart-items">
+
+    <p class="empty-cart">
+      Votre panier est encore vide.
+    </p>
+
+  </div>
+
+  <div class="cart-total">
+
+    <h3>
+      Total :
+      <span id="cart-total">0 FCFA</span>
+    </h3>
+
+    <button id="checkout-btn" disabled>
+      Valider ma commande
+    </button>
+
+    <button id="clear-cart" disabled>
+      Vider le panier
+    </button>
+
+  </div>
+
 </section>
 
 <section class="contact" id="contact">
+
   <p class="surtitle">RESTONS EN CONTACT</p>
+
   <h2>Nous trouver</h2>
 
   <div class="contact-info">
+
     <p><strong>TAWAKUL PARFUMS</strong></p>
+
     <p>📍 Parcelles Assainies, Unité 7, Dakar, Sénégal</p>
+
     <p>📞 +221 77 864 13 20</p>
-    <a class="btn" href="https://wa.me/221778641320" target="_blank">
+
+    <a class="btn"
+    href="https://wa.me/221778641320"
+    target="_blank">
+
       Nous contacter sur WhatsApp
+
     </a>
+
   </div>
 
   <div class="map">
+
     <iframe
       src="https://www.google.com/maps?q=Parcelles+Assainies+Unite+7+Dakar+Senegal&output=embed"
       width="100%"
@@ -101,25 +214,246 @@
       loading="lazy"
       allowfullscreen>
     </iframe>
+
   </div>
+
 </section>
 
 <footer>
+
   <h3>TAWAKUL PARFUMS</h3>
+
   <p>Une marque de parfum unique.</p>
+
   <p>© 2026 TAWAKUL PARFUMS - Tous droits réservés.</p>
+
 </footer>
 
 <script>
-function commander(produit, prix) {
-  const phone = "221778641320";
-  const message = "Bonjour TAWAKUL PARFUMS, je souhaite commander : "
-    + produit + " au prix de " + prix + " FCFA.";
-  window.open(
-    "https://wa.me/" + phone + "?text=" + encodeURIComponent(message),
-    "_blank"
-  );
+
+// NUMÉRO WHATSAPP
+
+const phone = "221778641320";
+
+// PANIER
+
+let cart = JSON.parse(localStorage.getItem("tawakulCart")) || [];
+
+// FORMAT PRIX
+
+function formatPrice(price) {
+  return price.toLocaleString("fr-FR") + " FCFA";
 }
+
+// SAUVEGARDER LE PANIER
+
+function saveCart() {
+  localStorage.setItem("tawakulCart", JSON.stringify(cart));
+}
+
+// AFFICHER LE PANIER
+
+function displayCart() {
+
+  const cartItems = document.getElementById("cart-items");
+
+  const totalElement = document.getElementById("cart-total");
+
+  const countElement = document.getElementById("cart-count");
+
+  const checkoutButton = document.getElementById("checkout-btn");
+
+  const clearButton = document.getElementById("clear-cart");
+
+  cartItems.innerHTML = "";
+
+  let total = 0;
+  let count = 0;
+
+  if (cart.length === 0) {
+
+    cartItems.innerHTML =
+      '<p class="empty-cart">Votre panier est encore vide.</p>';
+
+  }
+
+  cart.forEach((item, index) => {
+
+    total += item.price * item.quantity;
+
+    count += item.quantity;
+
+    const product = document.createElement("div");
+
+    product.className = "cart-item";
+
+    const name = document.createElement("h3");
+    name.textContent = item.name;
+
+    const price = document.createElement("p");
+    price.textContent = formatPrice(item.price);
+
+    const quantity = document.createElement("div");
+    quantity.className = "quantity-controls";
+
+    const minus = document.createElement("button");
+    minus.textContent = "−";
+    minus.addEventListener("click", () => changeQuantity(index, -1));
+
+    const number = document.createElement("span");
+    number.textContent = item.quantity;
+
+    const plus = document.createElement("button");
+    plus.textContent = "+";
+    plus.addEventListener("click", () => changeQuantity(index, 1));
+
+    quantity.append(minus, number, plus);
+
+    const subtotal = document.createElement("p");
+    subtotal.textContent =
+      "Sous-total : " + formatPrice(item.price * item.quantity);
+
+    const remove = document.createElement("button");
+    remove.className = "remove-item";
+    remove.textContent = "Supprimer";
+
+    remove.addEventListener("click", () => {
+      removeProduct(index);
+    });
+
+    product.append(name, price, quantity, subtotal, remove);
+
+    cartItems.appendChild(product);
+
+  });
+
+  totalElement.textContent = formatPrice(total);
+
+  countElement.textContent =
+    count + (count > 1 ? " articles" : " article");
+
+  checkoutButton.disabled = cart.length === 0;
+
+  clearButton.disabled = cart.length === 0;
+
+  saveCart();
+
+}
+
+// AJOUTER UN PARFUM
+
+document.querySelectorAll(".add-cart").forEach(button => {
+
+  button.addEventListener("click", () => {
+
+    const name = button.dataset.name;
+
+    const price = Number(button.dataset.price);
+
+    const existingProduct = cart.find(item => item.name === name);
+
+    if (existingProduct) {
+
+      existingProduct.quantity++;
+
+    } else {
+
+      cart.push({
+        name: name,
+        price: price,
+        quantity: 1
+      });
+
+    }
+
+    displayCart();
+
+    button.textContent = "Ajouté ✓";
+
+    setTimeout(() => {
+      button.textContent = "Ajouter au panier";
+    }, 1000);
+
+  });
+
+});
+
+// MODIFIER LA QUANTITÉ
+
+function changeQuantity(index, amount) {
+
+  cart[index].quantity += amount;
+
+  if (cart[index].quantity <= 0) {
+    cart.splice(index, 1);
+  }
+
+  displayCart();
+
+}
+
+// SUPPRIMER UN PRODUIT
+
+function removeProduct(index) {
+
+  cart.splice(index, 1);
+
+  displayCart();
+
+}
+
+// VIDER LE PANIER
+
+document.getElementById("clear-cart").addEventListener("click", () => {
+
+  cart = [];
+
+  displayCart();
+
+});
+
+// VALIDER LA COMMANDE
+
+document.getElementById("checkout-btn").addEventListener("click", () => {
+
+  if (cart.length === 0) return;
+
+  let message = "Bonjour TAWAKUL PARFUMS !\n\n";
+
+  message += "Je souhaite commander :\n\n";
+
+  let total = 0;
+
+  cart.forEach(item => {
+
+    const subtotal = item.price * item.quantity;
+
+    total += subtotal;
+
+    message +=
+      "• " + item.name +
+      "\nQuantité : " + item.quantity +
+      "\nPrix : " + formatPrice(subtotal) +
+      "\n\n";
+
+  });
+
+  message += "TOTAL : " + formatPrice(total);
+
+  message += "\n\nMerci de confirmer ma commande.";
+
+  const whatsappURL =
+    "https://wa.me/" + phone +
+    "?text=" + encodeURIComponent(message);
+
+  window.open(whatsappURL, "_blank");
+
+});
+
+// AFFICHER LE PANIER AU CHARGEMENT
+
+displayCart();
+
 </script>
 
 </body>
